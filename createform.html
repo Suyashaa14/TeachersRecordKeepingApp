@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>NIST</h2>
+        <ul>
+            <li><a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;&nbsp;&nbsp;Add Teacher</a></li>
+            <li><a href="create.html"><i class="fas fa-plus-square"></i>&nbsp;&nbsp;&nbsp;Create</a></li>
+            <li><a href="display.html"><i class="fas fa-tv"></i>&nbsp;&nbsp;&nbsp;Display</a></li>
+            <li><a href="login.html"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Login</a></li>
+            <li><a href="signup.html"><i class="fas fa-user-alt"></i>&nbsp;&nbsp;&nbsp;Sign Up</a></li>
+        </ul> 
+    </div>
+    <div class="container">
+        <form action="#" method="post" class="addteach">
+            <div class="one">
+                <label class="label">Faculty</label>
+                <select class="opt"></select>
+            </div>
+            <div class="one">
+                <label class="label">Class</label>
+                <select class="opt"></select>
+            </div>
+            <div class="one">
+                <label class="label">Subject</label>
+                <select class="opt"></select>
+            </div>
+            <div class="one">
+                <label class="label">Teacher Name</label>
+                <select class="opt"></select>
+            </div>
+          <div class="one">
+            <label class="label">Start Time</label>
+            <input type="time" name="s_time" class="opt"> 
+          </div>
+           <div class="one">
+            <label class="label">End Time</label>
+            <input type="time" name="e_time" class="opt">
+           </div>
+           <div class="one">
+            <label class="label">Day</label>
+            <div class="day">
+                <input type="checkbox" name="day[]" value="sunday" class="two">Sunday 
+               &nbsp; <input type="checkbox" name="day[]" value="monday" class="two">Monday <br>
+                <input type="checkbox" name="day[]" value="tuesday" class="two">Tuesday 
+                &nbsp;<input type="checkbox" name="day[]" value="wednesday" class="two">Wednesday <br>
+                <input type="checkbox" name="day[]" value="thursday" class="two">Thursday 
+                <input type="checkbox" name="day[]" value="friday" class="two">Friday <br>
+                <input type="checkbox" name="day[]" value="saturday" class="two">Saturday
+                <input type="checkbox" name="day[]" value="all" class="two">All
+            </div>
+           </div>
+           <input type="submit" value="Submit" class="sub">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
